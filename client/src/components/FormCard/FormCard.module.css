@@ -1,0 +1,181 @@
+.back {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    z-index: 1;
+}
+
+.statsBorder {
+    margin-top: 3rem;
+    margin-left: 10px;
+    background-color: #252F14;
+    padding: 6px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border-radius: 20px 8px 20px 8px;
+    width: 65%;
+    font-family: "pixel";
+    font-size: small;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    position: relative;
+    z-index: 2;
+}
+
+.statsBar {
+    background-color: #F9F8D9;
+    border-radius: 17px 8px 17px 8px;
+    width: 100%;
+    image-rendering: pixelated;
+    z-index: 2;
+}
+
+.topStats {
+    display: flex;
+    justify-content: space-between
+}
+
+.topStats h1 {
+    margin: 5px 10px 0px 10px
+}
+
+.hpBar {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+}
+
+.hpContainer {
+    display: flex;
+    background-color: #252F14;
+    margin: 5px 10px 0px 0px;
+    padding: 3px;
+    border-radius: 13px;
+}
+
+.hpContainer h1 {
+    margin: 0px;
+    color: orange;
+    padding: 0px 5px 0px 5px;
+    font-size: large;
+}
+
+.healthContainer {
+    background-color: white;
+    border-radius: 13px;
+    padding: 3px;
+    color: #58D080
+}
+
+.healthContainer div {
+    background-color: #58D080;
+    width: 280px;
+    border-radius: 42px;
+}
+
+.healthContainer a {
+    color: #58D080;
+}
+
+.hpNumber {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hpNumber h3 {
+    margin: 0px 20px 5px 0px;
+    font-size: x-large;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.stats {
+    position: absolute;
+    top: -20px;
+    width: 96%;;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    background-color: #F9F8D9;
+
+
+
+
+    border: 6px solid black;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px 0px 16px 16px;
+    border-top: none;
+}
+
+.stats h2 {
+    margin: 10px 0
+}
+
+.statsBorder:hover .stats {
+    top: 98px; 
+    opacity: 100%;
+}
+
+.type {
+    font-weight: normal;
+    font-size: medium;
+    color: white;
+    padding: 0px 8px 0px 23px;
+    margin: 5px;
+    max-width: fit-content;
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    left: 0px;
+    height: 17px;
+    font-size: xx-small;
+    bottom: 0px;
+    border: none;
+    background: none;
+}
+
+.delete:hover {
+    background-color: #B27E80;
+    color: white;
+}
+
+.imageContainer {
+    width: -webkit-fill-available;
+    padding-top: 56px;
+    padding-left: 50px;
+    height: 200px;
+}
+
+.imageContainer img {
+    /*width: 200px;*/
+    height: 280px;
+    max-width: 100%;
+    /* paddingTop: "163px",
+     paddingLeft: "185px"*/
+}
+
+@media (max-width: 1000px) {
+    .imageContainer {
+        padding: 50px;
+    }
+
+    .hpContainer {
+        margin: 5px 10px;
+    }
+
+    .statsBorder:hover .stats {
+        top: 104px;
+        opacity: 100%;
+    }
+    
+}

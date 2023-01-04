@@ -1,0 +1,246 @@
+.background {
+    background-image: url("../../assets/images/box_background.png");
+    padding: 25px 250px;
+    height: calc(100vh - 86px);
+}
+
+.container {
+    background-color: aliceblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: "pixel";
+    position: relative;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.arrows a {
+    /*text-decoration: none;
+    color:white;
+    background-color: cornflowerblue;
+    padding: 5px 10px;
+    font-size: x-large;*/
+
+
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: "NES";
+    position: relative;
+    color: #fff;
+    background-color: #209cee;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #0c639c;
+    border-image-slice: 2;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%230c639c' /></svg>");
+}
+
+.arrows a:hover {
+    background-color: #1190E3;
+}
+
+.arrows a::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset -4px -4px #1081cb;
+    box-shadow: inset -4px -4px #1081cb;
+}
+
+.leftArrow {
+    margin-right: 1rem ;
+}
+
+.rightArrow {
+    margin-left: 1rem;
+}
+
+.up {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imageContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageRes {
+    /*width: 200px;*/
+    width: 300px;
+    max-width: 100%;
+    max-height: 30em;
+}
+
+.innerUp {
+    width: 50%;
+}
+
+.innerUp h1:nth-child(1) {
+    font-size: x-large;
+}
+
+.innerUp h1 {
+    margin-top: 2rem;
+    overflow-wrap: break-word;
+}
+
+.types {
+    font-family: "bungee";
+    color: white;
+    padding: 0px 22px;
+    margin: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.hw {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.hw div {
+    width: 50%;
+}
+
+.hw h2 {
+    margin: 0;
+    border-bottom: 1px dotted gray;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 10px 10px 10px;
+}
+
+.stats {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.stats div {
+    border: 1px solid black;
+}
+
+.statNames {
+    /*text-align: left;
+    padding-left: 10px;*/
+    width: 30%;
+    background-color: #8898A7;
+}
+
+.statNames h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.statNames h2:nth-child(odd) {
+    background-color: #798A9A;
+}
+
+.statNames h2:nth-child(even) {
+    background-color: #8797A6;
+}
+
+.statData {
+    /*text-align: right;
+    padding-right: 42px;*/
+    width: 70%;
+    background-color: #E0E8E8;
+}
+
+.statData h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.statData h2:nth-child(odd) {
+    background-color: #C7CED8;
+}
+
+.statData h2:nth-child(even) {
+    background-color: #E2EAEB;
+}
+
+.deleteContainer {
+    padding: 1rem;
+}
+
+.deleteContainer button {
+    padding: 15px 20px;
+    font-family: "NES";
+    position: relative;
+    color: #fff;
+    background-color: #e76e55;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #bc361a;
+    border-image-slice: 2;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23bc361a' /></svg>");
+}
+
+.deleteContainer button::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset -4px -4px #e14828;
+    box-shadow: inset -4px -4px #e14828;
+}
+
+.deleteContainer button:hover {
+    background-color: #E45B3F;
+}
+
+@media (max-width: 1066px) {
+    .innerUp h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .background {
+        padding: 25px 25px;
+    }
+
+    .types {
+        width: min-content;
+    }
+
+    .statNames {
+        width: 100%;
+    }
+
+    .hw {
+        width: 100%;
+    }
+}

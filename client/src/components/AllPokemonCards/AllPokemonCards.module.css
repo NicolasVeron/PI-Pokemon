@@ -1,0 +1,21 @@
+.background {
+  background-image: url("../../assets/images/box_background.png");
+  image-rendering: pixelated;
+  border-radius: 7px;
+  border: 7px solid rgb(113, 112, 124);
+}
+
+.addedBackground {
+  border-bottom: 10px solid rgba(119, 159, 105, 0.5);
+  border-right: 10px solid rgba(119, 159, 105, 0.5);
+  border-top: 10px solid rgba(198, 249, 189, 0.5);
+  border-left: 10px solid rgba(198, 249, 189, 0.5);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}

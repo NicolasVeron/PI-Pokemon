@@ -1,0 +1,80 @@
+.background {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.display img {
+    width: 500px;
+    padding: 2rem;
+}
+
+.rightContent {
+    align-items: center;
+    text-align: center;
+    color: #474747;
+}
+
+.rightContent h1 {
+    font-family: "sketch";
+    font-size: 89px;
+    margin: 0px;
+}
+
+.rightContent h2 {
+    margin-top: 0px;
+    font-family: "vessel";
+}
+
+.rightContent a {
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    font-size: 23px;
+}
+
+.text1 {
+    margin: 0px;
+    font-family: "vessel";
+}
+
+.text2 {
+    margin-top: 0px;
+    /* margin-bottom: 5px; */
+    font-family: "vessel";
+}
+
+.goBack {
+    padding: 19px 26px;
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid #474747;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    transition: 0.3s ease;
+}
+
+.goBack:hover {
+    background-color: #474747;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 916px) {
+
+    .display {
+        height: fit-content;
+    }
+    .rightContent {
+        padding-bottom: 2rem;
+    }
+    .display img {
+        padding-bottom: 0px;
+    }
+    
+}

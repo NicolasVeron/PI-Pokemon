@@ -1,0 +1,109 @@
+.mainContainer {
+    display: flex;
+    background-color: white;
+    /*margin: 10px 8px;*/
+    margin: 10px 25px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    max-width: 200px;
+    transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 4;
+}
+
+.white {
+    position: absolute;
+    width: 150px;
+    z-index: 0;
+    border-radius: 30em;
+    top: 10%;
+    left: 13%;
+    opacity: 0.6;
+}
+
+.imgContainer {
+    z-index: 1;
+}
+
+.imgContainer img {
+    width: 200px;
+    image-rendering: pixelated;
+    z-index: 1;
+
+    /* Complementario al div contenedor de la imagen (con classname imgContainer) */
+    height: 200px;
+    /*object-fit: cover*/
+    object-fit: fill;
+}
+
+/*.contents:hover .data {
+    bottom: -87px;
+    z-index: 2;
+    opacity: 100%;
+}*/
+
+/*.contents:hover {
+    transform: scale(1.2);
+    z-index: 3;
+}*/
+
+.data {
+    color: white;
+    background-color: #292929;
+    width: stretch;
+    font-family: "pixel";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*
+        Hover
+    
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    transition: 0.5s ease-in-out;
+    opacity: 0%;
+    */
+}
+
+.data h1 {
+    margin: 0px;
+    overflow-wrap: anywhere;
+    max-width: fit-content;
+}
+
+.types {
+    margin: 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.type {
+    font-family: "bungee";
+    font-weight: normal;
+    font-size: medium;
+    color: white;
+    padding: 0px 8px;
+    margin: 5px;
+    max-width: fit-content;
+}

@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "header";
+    src: url("../../assets/fonts/MadouFutoMaruGothic.ttf") format("truetype");
+  }
+
+.background {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.text {
+    font-family: "header";
+    color: white;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.text h1 {
+    margin: 13px 0px;
+    font-weight: 100;
+    text-shadow: 3px 3px black;
+}
+
+.link {
+    font-family: "pixel";
+    margin: 15px;
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 300px;
+    height: 75px;
+    margin: 10px 0;
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.link a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: url("../../assets/images/btn-bg1.png");
+    background-size: cover;
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+.link a:hover:before {
+    width: 100%;
+}
+
+.link a span {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 870px) {
+    .background {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 672px) {
+    .text {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 528px) {
+    .text {
+        font-size: larger;
+    }
+}

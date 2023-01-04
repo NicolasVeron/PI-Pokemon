@@ -1,0 +1,50 @@
+.container {
+    position: absolute;
+    left: -20px;
+    padding-top: 6rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: flex-start;
+    width: 10em;
+}
+
+.selectContainer {
+    position: relative;
+    background-color: #736E6F;
+    clip-path: polygon(0% 0%, 88% 0, 100% 50%, 88% 100%, 0% 100%);
+    margin: 2px -1px;
+    transition: 0.5s;
+    float: left;
+}
+
+.grayBorder {
+    margin: 0px 2px;
+    background-color: #2E302F;
+    clip-path: polygon(0% 0%, 88% 0, 100% 50%, 88% 100%, 0% 100%);
+}
+
+.selector {
+    font-family: "pixel";
+    font-weight: normal;
+    margin: 3px 0px;
+    /*padding: 10px;
+    padding: 1.5rem 3rem;*/
+    padding: 1.5rem 4rem 1.5rem 2rem;
+    text-align-last: center;
+    border: none;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    background-color: #1F1F1F;
+    clip-path: polygon(3% 0%, 84% 0, 95% 49%, 84% 99%, 3% 100%);
+}
+
+.selectContainer:hover {
+    transform: translateX(10px);
+}
+

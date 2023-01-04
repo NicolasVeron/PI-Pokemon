@@ -1,0 +1,61 @@
+.background {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(40, 42, 54);
+    background-size: cover;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    display: flex;
+}
+
+.leftContainer {
+    display: flex;
+    flex-shrink: -1;
+    flex-grow: 1;
+    width: 15%;
+}
+
+.rightContainer {
+    flex-wrap: wrap;
+    flex-shrink: -1;
+    flex-grow: 100;
+    width: 80%;
+    /* padding: 6px; */
+    /* background-color: rgb(248, 241, 216); */
+    margin: 5px;
+    border-radius: 9px;
+    border: 6px solid rgb(84, 89, 106);
+    background-color: rgb;
+    background-color: rgb(84, 89, 106);
+    transition: 1s ease-in-out;
+}
+
+.rightContainerdiv {
+    background-color: rgb(204, 200, 185);
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.cont {
+    background-color: rgb(248, 241, 216);
+    padding: 10px;
+    border-radius: 9px;
+}
+
+@media (max-width: 1256px) {
+    .leftContainer {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .leftContainer {
+        display: none;
+    }
+}

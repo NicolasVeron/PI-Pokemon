@@ -1,0 +1,164 @@
+.container {
+    /*display: flex;
+    place-content: center space-between;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+    font-family: "pixel";
+    height: 5em;*/
+
+    display: flex;
+    /* place-content: center space-between; */
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    /* background-color: cadetblue; */
+    font-family: "pixel";
+    /*height: 5em; quitado a causa del burger, volver si es necesario*/
+    background-color: #333;
+    color: white;
+    align-items: center;
+}
+
+.icon {
+    padding: 0 15px;
+    border-right: 1px dotted white;
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
+}
+
+.icon:hover {
+    background-color: #555;
+}
+
+.icon a img {
+    height: 4.5rem;
+    padding: 0px 10px;
+}
+
+.toggle {
+    /*
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;*/
+
+    position: absolute;
+    top: 1.75rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 38px;
+    height: 30px;
+}
+
+.toggle span {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navBarLinks {
+    display: flex;
+    align-items: center;
+}
+
+.activeNavBarLinks {
+    display: flex;
+    align-items: center;
+}
+
+.createContainer {
+    padding: 0px 15px;
+    border-right: 1px dotted white;
+    align-items: center;
+    /* text-align: center; */
+    display: flex;
+}
+
+.createContainer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.createContainer:hover {
+    background-color: #555;
+}
+
+.no {
+    display: none;
+}
+
+.hidden {
+    display: flex;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.sortFilter {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .toggle {
+        display: flex;
+    }
+
+    .icon {
+        border: none;
+    }
+
+    .icon a {
+        padding: 10px 5px 0px 5px
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navBarLinks {
+        display: none;
+    }
+
+    .createContainer {
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0;
+        border: none;
+    }
+
+    .activeNavBarLinks{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .activeNavBarLinks .hidden {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sortFilter {
+        display: inline;
+    }
+}

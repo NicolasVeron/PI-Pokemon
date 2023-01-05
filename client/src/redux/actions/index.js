@@ -1,4 +1,5 @@
 import axios from "axios"
+const { REACT_APP_BACKEND_URL } = process.env
 
 export const GET_POKEMON = "GET_ALL_PKMN"
 export const GET_TYPES = "GET_TYPES"
@@ -17,7 +18,7 @@ export const DETAILS_ERROR = "DETAILS_ERROR"
 export const getAllPokemon = () => {
     return async (dispatch) => {
         try {
-            const json = await axios.get("http://localhost:3001/pokemons")
+            const json = await axios.get(`${REACT_APP_BACKEND_URL}/pokemons`)
             return dispatch({type: GET_POKEMON, payload: json.data})
         } catch (e) {
             dispatch({
@@ -31,7 +32,7 @@ export const getAllPokemon = () => {
 export const getAllTypes = () => {
     return async (dispatch) => {
         try {
-            const json = await axios.get("http://localhost:3001/types")
+            const json = await axios.get(`${REACT_APP_BACKEND_URL}/types`)
             return dispatch({type: GET_TYPES, payload: json.data})
         } catch (e) {
             console.log("types action error: ", e)
@@ -42,7 +43,7 @@ export const getAllTypes = () => {
 export const searchByName = (name) => {
     return async (dispatch) => {
         try {
-            const json = await axios.get(`http://localhost:3001/pokemons?name=${name}`)
+            const json = await axios.get(`${REACT_APP_BACKEND_URL}/pokemons?name=${name}`)
             return dispatch({type: SEARCH_BY_NAME, payload: json.data})
         } catch (error) {
             dispatch({
@@ -56,7 +57,7 @@ export const searchByName = (name) => {
 export const pokemonDetails = (id) => {
     return async (dispatch) => {
         try {
-            const json = await axios.get(`http://localhost:3001/pokemons/${id}`)
+            const json = await axios.get(`${REACT_APP_BACKEND_URL}/pokemons/${id}`)
             return dispatch({type: POKEMON_DETAILS, payload: json.data})
         } catch (e) {
             dispatch({
@@ -70,7 +71,7 @@ export const pokemonDetails = (id) => {
 export const createPokemon = (payload) => {
     return async () => {
         try {
-            const json = await axios.post("http://localhost:3001/pokemons", payload)
+            const json = await axios.post(`${REACT_APP_BACKEND_URL}/pokemons`, payload)
             return json
         } catch (e) {
             console.log("form action error: ", e)
@@ -81,7 +82,7 @@ export const createPokemon = (payload) => {
 export const destroyPokemon = (id) => {
     return async () => {
         try {
-            const json = await axios.delete(`http://localhost:3001/pokemons/${id}`)
+            const json = await axios.delete(`${REACT_APP_BACKEND_URL}/pokemons/${id}`)
             return json
         } catch (e) {
             console.log("destroy error: ", e)
